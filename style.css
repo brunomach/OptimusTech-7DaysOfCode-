@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --fonte-principal: 'Inter', sans-serif;
+    --cor-fonte-texto: #667085;
+    --cor-primaria: #8E2424;
+    --cor-titulos: #101828;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar__logo {
+    font-family: var(--fonte-principal);
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 2% 8% 2% 8%;
+    color: #3A404E;
+    font-weight: 500;
+}
+
+.navbar__links {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar__links__item {
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    color: var(--cor-fonte-texto);
+    font-weight: 500;
+}
+
+.navbar__botoes{
+    display: flex;
+    gap: 12px;
+    padding: 0% 0% 0% 27%;
+
+}
+
+.navbar__botoes__login {
+    color: var(--cor-fonte-texto);
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 8% 12% 8% 12%;
+}
+
+.navbar__botoes__register {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    border: var(--cor-primaria);
+    border-radius: 8px;
+    padding: 8% 12% 8% 12%;
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 7%;
+
+}
+
+.cabecalho__about{
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--cor-titulos);
+
+}
+
+.cabecalho__texto {
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-fonte-texto);
+    padding: 1%;
+    width: 66%;
+    text-align: center;
+}
+
+.metricas-container{
+    display: flex;
+    padding: 0% 8% 7% 8%;
+    gap: 32px;
+}
+
+.metricas-container__info{
+    width: 25%;
+}
+
+.metricas-container__info > h2 {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 3.75rem;
+    padding-bottom: 6%;
+}
+
+.metricas-container__info > h3 {
+    color: var(--cor-titulos);
+    font-family: var(--fonte-principal);
+    font-weight: 500; 
+    font-size: 1.125rem;
+    padding-bottom: 4%;
+}
+
+.metricas-container__info > p {
+    color: var(--cor-fonte-texto);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.secao-vagas__apresentacao {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+    align-items: center;
+}
+
+.secao-vagas__apresentacao > span {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-radius: 16px;
+    background-color: hsl(0, 25%, 95%);
+    padding: 0.5% 1%;
+}
+
+.secao-vagas__apresentacao > h2 {
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: var(--cor-titulos);
+    padding-bottom: 1.5%;
+    padding-top: 1.1%;
+}
+
+.secao-vagas__texto {
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--cor-fonte-texto);
+    padding-bottom: 5%;
+}
+
+.secao-vagas__apresentacao > img {
+    margin-bottom: 1%;
+}
+
+.secao-vagas__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--cor-titulos);
+    margin: 4.5% 20% 0% 20%;
+    padding-bottom: 2.5%;
+
+}
+
+.vaga {
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    margin: 0% 20% 2%;
+    padding: 1.3%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.vaga__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: var(--cor-titulos);
+}
+
+.informacoes {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor-fonte-texto);
+}
+
+.informacoes >span {
+    padding-right: 2%;
+}
+
+.depoimentos {
+    background-color: hsl(0, 25%, 95%);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 6.8%;
+    padding: 4.5% 0%;
+}
+
+.depoimentos__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5%;
+}
+
+.depoimentos__texto {
+    font-family: var(--fonte-principal);
+    color: var(--cor-titulos);
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0% 5%;
+    margin-bottom: 3%;
+}
+
+.depoimentos__usuario {
+    font-family: var(--fonte-principal);
+    color: var(--cor-titulos);
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 1.5% 0% 0.5% 0%;
+}
+
+.depoimentos__cargo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-texto);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.rodape {
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 6.8% 0;
+}
+
+.rodape__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-titulos);
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.rodape__texto {
+    font-family: var(--fonte-principal);
+    color: var(--cor-fonte-texto);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.rodape__formulario {
+    display: flex;
+    gap: 16px;
+    margin-top: 1.5%;
+    width: 34.5%;
+}
+
+.rodape__formulario__email {
+    width: 360px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    padding: 2% 3%;
+}
+
+.rodape__formulario__email::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.rodape__formulario__cadastro {
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--cor-primaria);
+    border: 1px solid;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 3% 4%;
+}
+
+.rodape > span {
+    font-family: var(--fonte-principal);
+    color: #98A2B3;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1%;
+}
